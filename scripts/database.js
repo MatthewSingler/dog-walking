@@ -100,11 +100,11 @@ const database = {
     }]
 }
 
-export const getWalkers = () => {
+export const getWalkers = () => {  //This is a function that is returning a copy of the walkers array and storing it for us to use.
     return database.walkers.map(walker => ({...walker}))
 }
 
-export const getPets = () => {
+export const getPets = () => {  //This is a function that is storing a copy of the pets array for us to use. 
     return database.pets.map(pet => ({...pet}))
 }
 
